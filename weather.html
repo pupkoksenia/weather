@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="bigboss">
+    <div class="header" style="grid-area: header" id='top'>
+        <div class="buttons" style="padding-left: 4.5%; padding-top:4.5%;">
+        <button class="button1">Rus</button>
+        
+      </div>
+      <div class="search"  style="padding-right: 4.5%; padding-top:4.5%;">
+        <input type="search" placeholder="Search city or ZIP"> 
+            <input type="submit" value="Найти">
+      </div>
+    </div>
+    <div class="middle"style="grid-area: middle" id='middle'>
+
+
+      
+
+
+
+         <div class="left" style="height: 100%;" id='left'>
+          <div class="location" style="grid-area: location">Belarus Minsk</div>
+          <img src="picture.png" style="grid-area: location">
+        
+          <div class="year" style="grid-area: location"></div>
+          <div class="weather"></div>
+         <!--- <div class="loc" style="grid-area: weather"></div>--->
+     
+        </div>
+
+         <div class="right">
+
+          <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.458115804562!2d27.518469515752!3d53.88806098009609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcffae9bfb24d%3A0xa44fb8d8e4a099b4!2sProspekt%20Dzerzhinskogo%2011%2C%20Minsk%20220089!5e0!3m2!1sen!2sby!4v1623869857179!5m2!1sen!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="loc"></div>
+
+        </div>
+     
+
+    </div>
+  <div class="footer"style="grid-area: footer" id='footer'></div>
+
+
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="buttons.js"></script>
+  
+    
+</body>
+</html>

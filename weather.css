@@ -1,0 +1,125 @@
+body,html{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+   
+}
+body{
+overflow: hidden;
+background:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
+background-image: url("https://live.staticflickr.com/65535/51176690670_e6cea929cb_b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
+}
+.bigboss{
+   
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 100% ; 
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: 
+"header"
+"middle"
+"footer"
+}
+.header{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 50% 50% ; 
+    grid-template-areas: 
+    "buttons"
+    "search"
+}
+input[type=search], input[type=submit]{
+    opacity: 0.7;
+    border-radius: 5px;
+    border-color: black;
+    color:black;
+    padding: 10px 10px;
+    float: right;
+   
+}
+input[type=search]{
+     width: 40%;
+}
+
+.button1{
+  /*  background-color: transparent;*/
+  opacity: 0.7;
+    border-radius: 5px;
+    border-color: black;
+    color:black;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+.middle{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 65% 35% ; 
+    grid-template-rows: 100%;
+   
+}
+.left{
+    display:grid;
+    grid-template-columns: 45% 55% ; 
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "location"
+    "weather"
+    
+}
+.location{
+
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #fff;
+    font-size:30px;
+    color:white;
+    margin-left: 65px;
+    margin-top: 20px;
+    font-weight:bolder;
+}
+.year{
+    font-size:20px;
+    color:white;
+    padding-left: 65px;
+    padding-top: 50px;
+}
+.loc{
+    font-size:15px;
+    color:white;
+    padding-left: 35px; 
+    font-style:inherit;
+    padding-top: 150px;
+}
+.weather{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size:20px;
+    color:white;
+   padding-top: 50px; 
+    font-style:inherit;
+    font-weight:bolder;
+}
+img{
+    opacity: 0.5;
+    border-radius: 2px;
+    padding-left: 65px;
+    padding-top: 80px;
+    width: 70%;
+}
+
+.map-responsive{
+   height:60%;
+   width:60%;
+   padding-right: 50px; 
+}
